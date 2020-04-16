@@ -4,4 +4,4 @@ portfolio
 
 click on this to see the website
 
-https://megamindnk.github.io/portfolio
+https://megamindnk.github.io/
