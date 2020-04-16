@@ -1,0 +1,263 @@
+    .menu-butt{
+     position: absolute;
+    z-index: 6;
+    right: 22px;
+    top: 35px;
+    cursor:pointer;
+    transition: all 0.7s ease-out ; }
+
+    .btn{
+       width: 30px;
+       height: 3px;
+       margin: 0 0 2 0;
+       text-align: right;
+        border-bottom: solid red 3px;
+        transition:all 0.7s ease-out;
+    }
+    .menu-butt.close .btn:nth-child(1){
+        width: 30px;
+        transform: rotate(45deg) translate(8px,6px);       
+    }
+    .menu-butt.close .btn:nth-child(2){
+        width: 30px;
+        transform: rotate(45deg);
+        opacity: 0%;
+    }.menu-butt.close .btn:nth-child(3){
+        width: 30px;
+        transform: rotate(-45deg) translate(5px,-4px);
+    }
+      .menu{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        opacity: 0.9;  
+        visibility: hidden;
+    }
+    .menu.show{
+        visibility: visible;
+    }
+    .mypic, .menu-links{
+        display: flex;
+        flex-flow: column wrap;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+    .mypic{
+        background-color:rgb(38, 73, 37);;
+        transform: translate3d(-100%,0,0);
+        transition: 0.5s ease-out;
+        opacity: 1;
+    }
+    .mypic.show{
+        transform: translate3d(0,0,0);
+    }
+
+    .menu-links{
+        background-color: rgb(38, 61, 37);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transform: translate3d(100%,0,0);
+        transition: 0.5s ease-out;
+    }
+    .menu-links.show{
+        transform: translate3d(0,0,0);
+        transition: 0.5s ease-out;
+    }
+    #image{
+        background: url("./image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #myimage{
+        background: url('./myimage.jpg');
+        background-size: cover;
+        border: solid greenyellow;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    .link{
+        transform: translate3d(100%,0,0);
+        transition: all 0.5s ease-out;
+    }    
+    .link.show{
+        transform: translate3d(0,0,0);
+    }
+    .link{
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600 ;
+        padding: 2%;
+        color: honeydew;
+        font-size: 30px;
+        position: relative;
+    }
+    .link:nth-child(1){ 
+        transition-delay: 0.1s;
+    }
+    .link:nth-child(2){
+        transition-delay: 0.2s;
+    }
+    .link:nth-child(3){
+        transition-delay: 0.3s;
+    }
+    .link:nth-child(4){
+        transition-delay: 0.4s;
+    }
+     a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .link a:hover{
+        color:gold
+    }
+    
+body {
+    background:rgb(38, 61, 37);
+    color: white;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; 
+}
+.sname{
+    color:gold;
+    text-transform: capitalize;
+}
+.content-body{
+    min-height: calc(100vh - 60px);
+    padding: 4rem;
+    margin-top: 10%;
+}
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400; 
+}
+.fname{
+    font-size:  6rem;
+    text-transform: capitalize;
+}
+.sub-head{
+    font-size: 2rem;
+    background-color: maroon;
+    padding-left: 1rem;
+}
+.icons{
+    padding:0 3rem 0 0; 
+    padding-left: 0;
+    font-size: 20px;
+}
+.icons i{
+    padding: 1rem;
+    padding-left: 0;
+}
+.icons i:hover{
+    color: mediumspringgreen;
+}
+footer{
+    background-color: rgb(57, 119, 55);
+    text-align: center;
+    padding: 3px ;
+    border-top: rgb(30, 206, 14) solid 2px;
+}
+/*about me exclusive codes start here*/
+
+.quickfacts{
+    color:gold;
+    text-transform: capitalize;
+    padding: 2rem 0  1rem 0;
+    font-size: 30px;
+}
+.about{
+    min-height: calc(100vh - 60px);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.about-me{
+    display: grid;
+    grid-template-areas: 'myself academics works';
+    grid-template-columns: repeat(3,5fr);
+    gap: 40px;
+    padding-top: 3rem;
+}
+.box{
+    background-color: rgb(34, 85, 32);
+    padding: 1rem;
+    border-bottom: rgb(2, 117, 248) 5px solid;
+}
+/*my project css starts here */
+
+
+
+/*contact exclusive html*/
+.reach{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(38, 61, 37);
+    padding-top: 2rem;
+}
+.reach div{
+    margin: 2px;
+    padding: 1rem;
+}
+.reach div:hover{
+    background-color: sienna;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px ;   
+}
+
+/*for different devices*/
+
+@media screen and (max-width:768px){
+
+    main{
+        align-items: center;        
+        text-align: left;
+    }
+    main .fname{
+        line-height: 1;
+        margin: 1rem;
+        font-size: 4rem;
+    }
+    .sub-head{
+        padding-right: 1rem;
+    }
+    .mypic{
+        height: 30vh;
+        transform: translate3d(0,-100%,0);
+    }
+    #myimage{
+        height: 150px;
+        width: 150px;
+    }
+    .menu-links, .mypic{
+        float: none;
+        width: 100%;
+    }
+    .menu-links{
+        height: 70vh;
+        transform: translate3d(0,100%,0);
+        transition: 0.5s ease-out;
+    }
+    .icons{
+        padding: 0;
+    }
+    .about-me{
+        grid-template-areas: 'myself' 'academics' 'works';      
+        grid-template-columns: 1fr;
+        padding-bottom: 5px;
+    }
+        font-size: large;
+    }
+    footer{
+        font-size: small;
+    }   
+}
