@@ -255,6 +255,7 @@ footer{
         grid-template-columns: 1fr;
         padding-bottom: 5px;
     }
+    .reach{
         font-size: large;
     }
     footer{
