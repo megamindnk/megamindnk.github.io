@@ -7,23 +7,20 @@
     transition: all 0.7s ease-out ; }
 
     .btn{
-       width: 30px;
-       height: 3px;
+       width: 35px;
+       height: 4px;
        margin: 0 0 2 0;
-       text-align: right;
         border-bottom: solid red 3px;
         transition:all 0.7s ease-out;
     }
     .menu-butt.close .btn:nth-child(1){
-        width: 30px;
-        transform: rotate(45deg) translate(8px,6px);       
+        width: 35px;
+        transform: rotate(45deg) translate(10px,5px);       
     }
     .menu-butt.close .btn:nth-child(2){
-        width: 30px;
-        transform: rotate(45deg);
         opacity: 0%;
     }.menu-butt.close .btn:nth-child(3){
-        width: 30px;
+        width: 35px;
         transform: rotate(-45deg) translate(5px,-4px);
     }
       .menu{
@@ -47,7 +44,7 @@
         justify-content: center;
     }
     .mypic{
-        background-color:rgb(38, 73, 37);;
+        background-color:rgb(48, 37, 73);;
         transform: translate3d(-100%,0,0);
         transition: 0.5s ease-out;
         opacity: 1;
@@ -57,7 +54,7 @@
     }
 
     .menu-links{
-        background-color: rgb(38, 61, 37);
+        background-color: rgb(48, 78, 77);
         list-style: none;
         margin: 0;
         padding: 0;
@@ -126,7 +123,7 @@ body {
     line-height: 1.5; 
 }
 .sname{
-    color:gold;
+    color:rgb(13, 228, 5);
     text-transform: capitalize;
 }
 .content-body{
@@ -160,10 +157,10 @@ h1, h2, h3 {
     color: mediumspringgreen;
 }
 footer{
-    background-color: rgb(57, 119, 55);
+    background-color: rgb(40, 70, 39);
     text-align: center;
-    padding: 3px ;
-    border-top: rgb(30, 206, 14) solid 2px;
+    padding: 4px ;
+    border-top: rgb(22, 59, 50) solid 5px;
 }
 /*about me exclusive codes start here*/
 
@@ -227,8 +224,15 @@ footer{
         margin: 1rem;
         font-size: 4rem;
     }
+    .menu-butt{
+        position: fixed;
+    }
     .sub-head{
         padding-right: 1rem;
+    }
+    #image{
+        background-size: cover;
+        background-color: black;
     }
     .mypic{
         height: 30vh;
